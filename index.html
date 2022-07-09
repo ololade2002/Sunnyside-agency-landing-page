@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<link rel="stylesheet" href="./bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet"> <!-- Site google fonts link -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="index.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    
+  </style>
+</head>
+<body>
+
+ <section class="hero" id="intro">
+ 
+  <header>
+  <a href="index.html"><img src="./images/logo.svg" alt="logo"></a>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#service">Services</a></li>
+      <li><a href="#project">Projects</a></li>
+      <li><a class="contacts" href="#contact">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <img src="./images/icon-hamburger.svg" onclick="ham()" class="mobile-menu img-fluid" id="menu" alt="ham">
+</header>
+<div class="header-text">
+  <h2>WE ARE CREATIVES</h2>
+  <img src="./images/icon-arrow-down.svg" class="img-fluid" alt="arrow">
+</div>
+
+ </section>
+ <!--Mobile Navigation-->
+ <div class="mobile-nav  d-md-none" id="mobileNav">
+  <nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#service">Services</a></li>
+    <li><a href="#project">Projects</a></li>
+    <li><a href="#contact">CONTACT</a></li>
+  </ul>
+</nav>
+ </div>
+
+ <!--Feature nav-->
+ <section>
+  <div class="container-fluid m-0 p-0 ">
+    <div class="row justify-content-center g-0 align-items-center">
+
+
+      <div class="col-12  col-md-6 col-lg-6">
+        <div class=" card1 ">
+          <div class="card1-text">
+            <h2>Transform your brand</h2>
+            <p> We are a full-service creative agency specializing
+              in helping brands grow fast. 
+             Engage your clients through compelling visuals that 
+             do most of the marketing for you.
+           </p>
+           <a class="learn1" href="#">LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-6">
+        <div class="card2 ">
+        <picture>
+          <source media="(max-width:605px )" class="img-fluid" srcset="./images/mobile/image-transform.jpg">
+          <img class="img-fluid text-center " src="./images/desktop/image-transform.jpg"   alt="transform" >
+        </picture>
+      </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-6">
+        <div class="card3">
+        <picture>
+          <source media="(max-width:375px )" class="img-fluid" srcset="./images/mobile/image-stand-out.jpg">
+          <img class="img-fluid" src="./images/desktop/image-stand-out.jpg"  alt="transform" >
+        </picture>
+      </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-6">
+        <div class="card4">
+          <div class="card4-text">
+            <h2>Stand out to the right audience</h2>
+            <p> Using a collaborative formula of designers,
+              researchers, photographers, videographers, and copywriters,
+               we’ll build and extend your brand in digital places. 
+           </p>
+           <a class="learn2" href="#">LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-6">
+        <div class="card-g ">
+        <div class="card-text text-center">
+          <h3 class="g-text">Graphic Design</h3>
+          <p class="g-paragraph"> Great design makes you memorable.
+            We deliver artwork that underscores your brand 
+            message and captures potential clients’ attention.</p>
+         
+        </div>
+      </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-6">
+        <div class="card-p">
+        <div class="card-text text-center">
+          <h3 class="p-text">Photography</h3>
+          <p class="p-paragraph"> Increase your credibility by getting the most stunning,
+            high-quality photos that improve your business image.
+         </p>
+        </div>
+      </div>
+      </div>
+
+    </div>
+  </div>
+ </section>
+
+
+
+<!--Client testimonials-->
+<section class="mb-5">
+  <div class="container">
+    <h3 class="client text-center">CLIENT TESTIMONIALS</h3>
+    <div class="row  ">
+  
+  <div class="col-12 col-md-4">
+    <div class="card mt-5  border-0" >
+      <div class="card-body  text-center">
+       <img  class="card-img"  src="./images/image-emily.jpg" alt="">
+        <p class="card-texts"> We put our trust in Sunnyside and they delivered
+          , making sure our needs were met and deadlines 
+          were always hit.</p>
+        <h5 class="client-name">Emily R.</h5>
+        <h6 class="client-position">Marketing Director</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-4">
+    <div class="card mt-5 border-0" >
+      <div class="card-body  text-center">
+       <img class="card-img" src="./images/image-thomas.jpg" alt="">
+        <p class="card-texts"> Sunnyside’s enthusiasm coupled with their 
+          keen interest in our brand’s success made 
+          it a satisfying and enjoyable experience.</p>
+        <h5 class="client-name">Thomas S.</h5>
+        <h6 class="client-position">Chief Operating Officer</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-4">
+    <div class="card mt-5  border-0" >
+      <div class="card-body  text-center">
+       <img class="card-img" src="./images/image-jennie.jpg" alt="jennie">
+        <p class="card-texts"> Incredible end result! Our sales increased 
+          over 400% when we worked with Sunnyside. 
+          Highly recommended!</p>
+        <h5 class="client-name">Jennie F.</h5>
+        <h6 class="client-position">Business owner</h6>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</section>
+
+
+<!--Image Gallery-->
+<div class="container-fluid p-0 m-0">
+  <div class="row g-0">
+  
+    <div class="col-6 col-md-3">
+<picture>
+  <source media="(max-width: 300px )" class="img-fluid" srcset="./images/mobile/image-gallery-milkbottles.jpg">
+  <img src="./images/desktop/image-gallery-milkbottles.jpg" class="img-fluid" alt="">
+</picture>
+    </div>
+
+    <div class="col-6 col-md-3">
+          <picture>
+            <source media="(max-width: 300px)" class="img-fluid" srcset="./images/mobile/image-gallery-orange.jpg">
+            <img src="./images/desktop/image-gallery-orange.jpg" class="img-fluid" alt="">
+          </picture>
+    </div>
+
+    <div class="col-6 col-md-3">
+          <picture>
+            <source media="(max-width: 300px )" class="img-fluid" srcset="./images/mobile/image-gallery-cone.jpg">
+            <img src="./images/desktop/image-gallery-cone.jpg" class="img-fluid" alt="">
+          </picture>
+    </div>
+
+    <div class="col-6 col-md-3">
+          <picture>
+            <source media="(max-width: 300px )" class="img-fluid" srcset="./images/mobile/image-gallery-sugarcubes.jpg">
+            <img src="./images/desktop/image-gallery-sugarcubes.jpg" class="img-fluid" alt="">
+          </picture>
+    </div>
+  
+  </div>
+</div>
+
+<footer class="hero-footer">
+  <h3 class="footer-text">sunnyside</h3>
+  <nav >
+<ul class="text">
+ <li><a href="#about">About</a></li>
+ <li><a href="#service">Services</a></li>
+ <li><a href="#project">Project</a></li>
+</ul>
+<ul class="icon">
+  <li><a href="#"><img class="img-fluid" src="./images/icon-facebook.svg"  alt="facebook"></a></li>
+  <li><a href="#"><img class="img-fluid" src="./images/icon-instagram.svg" alt="instagram"></a></li>
+  <li><a href="#"><img class="img-fluid" src="./images/icon-twitter.svg" alt="twitter"></a></li>
+  <li><a href="#"><img class="img-fluid" src="./images/icon-pinterest.svg" alt="pinterest"></a></li>
+</ul>
+</nav>
+
+
+<script src="./bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.js"></script>
+<script src="index.js"></script>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">OLOLADE</a>.
+  </div>
+</footer>
+</body>
+</html>
+
